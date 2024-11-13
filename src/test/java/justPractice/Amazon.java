@@ -13,7 +13,7 @@ public class Amazon {
 		driver.get("https://www.amazon.in/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		WebElement element = driver.findElement(By.class("//span[@text='hm-icon-label']")).click();
+		driver.findElement(By.xpath("//span[@text='hm-icon-label']")).click();
 	}
 
 }
